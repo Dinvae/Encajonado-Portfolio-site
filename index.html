@@ -9,7 +9,18 @@
 
 <body>
 
-<!-- NAV / HEADER STYLE HERO -->
+<nav class="navbar">
+  <h2 class="logo">Dinvae</h2>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
 <header class="hero">
 
   <div class="hero-text">
@@ -21,8 +32,7 @@
     </p>
 
     <div class="hero-buttons">
-      <button>Hire Me</button>
-      <a href="#projects" class="secondary-btn">View Work</a>
+      <button onclick="location.href='#contact'">Hire Me</button>
     </div>
   </div>
 
@@ -32,8 +42,7 @@
 
 </header>
 
-<!-- ABOUT -->
-<section class="about">
+<section class="about" id="about">
 
   <div class="about-img">
     <img src="assets/work.jpg" alt="Working Image">
@@ -42,11 +51,8 @@
   <div class="about-text">
     <h2>About Me</h2>
 
-    <p>
-      I am a passionate UX-focused developer and designer who builds responsive,
-      user-friendly systems. My goal is to become a renowned web developer and graphic designer,
-      delivering both functionality and strong visual design.
-    </p>
+    <p>I am a UX-focused developer who specializes in building responsive, intuitive, and user-friendly systems that prioritize both usability and performance. My approach is centered on creating seamless digital experiences where functionality and design work together harmoniously, ensuring that users can navigate and interact with systems effortlessly across all devices. I pay close attention to detail, from layout structure and visual hierarchy to accessibility and responsiveness, so that every interface feels clean, modern, and purposeful.</p>
+    <p>In addition to front-end design principles, I also consider the underlying functionality and system efficiency, making sure that the solutions I develop are not only visually appealing but also stable, scalable, and maintainable. I continuously aim to improve user satisfaction by applying UX best practices, user-centered design thinking, and modern development techniques. Ultimately, my goal is to bridge the gap between design and development by delivering digital products that are both aesthetically refined and highly functional in real-world use.</p>
 
     <div class="stats">
 
@@ -71,53 +77,54 @@
 
 </section>
 
-<!-- SKILLS -->
 <section class="skills">
   <h2>My Skills</h2>
 
   <div class="skill-cards">
-
     <div class="skill">HTML</div>
     <div class="skill">CSS</div>
     <div class="skill">JavaScript</div>
     <div class="skill">SQL</div>
     <div class="skill">GitHub</div>
     <div class="skill">Cloudflare</div>
-
+    <div class="skill">Networking</div>
+    <div class="skill">PC Troubleshooting</div>
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section class="projects" id="projects">
 
-  <h2>Proof Gallery</h2>
+  <h2>My Projects</h2>
 
   <div class="project-grid">
 
     <div class="card">
-      <img src="assets/grocery.jpg" alt="Grocery System">
+      <img src="assets/grocery.jpg" alt="grocery">
       <div class="card-content">
         <h3>Grocery Shopping System</h3>
         <p><strong>Tech:</strong> HTML, CSS, JS, SQL</p>
         <p>Improved online grocery shopping with categorized UI and cart system.</p>
+        <a href="https://yourprojectlink.com" target="_blank">View Project →</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="assets/boutique.jpg" alt="Boutique System">
+      <img src="assets/boutique.jpg" alt="boutique">
       <div class="card-content">
         <h3>Boutique Store System</h3>
         <p><strong>Tech:</strong> HTML, CSS, JS, SQL</p>
         <p>Built inventory and sales tracking system for boutique stores.</p>
+        <a href="https://yourprojectlink.com" target="_blank">View Project →</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="assets/flowershop.jpg" alt="Flower Shop Website">
+      <img src="assets/flowershop.jpg" alt="flowershop">
       <div class="card-content">
         <h3>Flower Shop Website</h3>
         <p><strong>Tech:</strong> HTML, CSS, JS</p>
-        <p>Designed a visually appealing website to attract customers and showcase products.</p>
+        <p>Designed a visually appealing website.</p>
+        <a href="https://yourprojectlink.com" target="_blank">View Project →</a>
       </div>
     </div>
 
@@ -125,23 +132,38 @@
 
 </section>
 
-<!-- EXPERIENCE -->
 <section class="resume">
-
   <h2>Experience</h2>
 
-  <ul>
-    <li>Developed Grocery Shopping System</li>
-    <li>Built Boutique Store Sales System</li>
-    <li>Designed Flower Shop Website</li>
-  </ul>
+  <div class="experience-grid">
 
+    <div class="exp-card">
+      <h3>Grocery Shopping System</h3>
+      <p>Developed a user-friendly system with product categories and cart functionality.</p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Boutique Store System</h3>
+      <p>Created inventory and sales tracking system for small businesses.</p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Flower Shop Website</h3>
+      <p>Designed a responsive and visually appealing product showcase website.</p>
+    </div>
+
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact">
+<section class="contact" id="contact">
 
   <h2>Contact Me</h2>
+
+  <div class="contact-info">
+  <p>Email: <strong>dinvaec13@gmail.com</strong></p>
+  <p>GitHub: <a href="#">github.com/dinvae</a></p>
+  <p>Number: <strong>09164214550</strong></p>
+</div>
 
   <form>
     <input type="text" placeholder="Your Name" required>
@@ -151,6 +173,11 @@
   </form>
 
 </section>
+
+
+<footer class="footer">
+  <p>© 2026 Dinvae Encajonado | Portfolio</p>
+</footer>
 
 </body>
 </html>
